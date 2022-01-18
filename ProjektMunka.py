@@ -90,7 +90,7 @@ def folyoso():
     folyoso()
 def valasztas_balra():
  print("Tehát balra indulsz. A tekinteted azonnal megragadja egy szoba, amelyből fény szűrődik ki. Veszélyes is lehet oda bemenni, ugyanakkor lehet, hogy még hasznodra válik bekukkantani oda.")
- time.sleep(1)
+ time.sleep(5)
  #5. választási lehetőség a játékosnak
  print(""" A. Bemész a szobába
 B. Tovább haladsz a folyosón""")
@@ -106,14 +106,15 @@ def valasztas_szoba():
     print(" Eluralkodik rajtad a kíváncsiság, és úgy döntesz, belépsz. A szobába betoppanva meglátod, hogy a fény forrása egy telefon kijelzője, a telefon épp egy videót játszik le.  ")
     time.sleep(5)
     print(" A videó szereplője te vagy, ahogy éppen az újévi fogadalmadról beszélsz, miközben a háttérben neked kiabálnak és füttyögnek. A videó azzal zárul, hogy stoppolsz, és megáll melletted egy fekete furgon. Elszörnyülködsz azon, hogy mennyire ostoba voltál, s valószínűleg a fuvar miatt vagy itt. Elrakod a telefonod, majd tovább indulsz kiutat keresni.  ")
-    time.sleep(5)
+    time.sleep(8)
     valasztas_tovabb()
 def valasztas_tovabb():
  print(" Továbbra is balra haladsz. A folyosón haladva egy kisasztalt találsz, fölötte pedig egy festményt vélsz felfedezni. Telefonodat hívod segítségül, hogy megcsodálhasd a képet.")
  time.sleep(5)
  print("Ám ezen döntésed hamar megbánod. A kép, amelyet felfedeztél, Csontváry Kosztka Tivadar Öreg Halász nevű fesménye, csak éppen a jobb oldali része van áttükrözve a másik oldalra is. A komor arcú, sátánt idéző halász portréja nem éppen segített a lelki állapotodon. Gyorsan elrakod a telefont és tovább halasz. ")
+ time.sleep(7)
  print(" A folyosó végén egy szoba várt, tárva nyitva. A szoba nincs megvilágítva, ugyanúgy, mint a ház többi része, de a félhomályban észreveszel egy lógó valamit, ami mintha lebegne. Rossz előérzeted van, ugyanakkor el tudod képzelni, hogy erre lehet a kijárat.")
- time.sleep(1)
+ time.sleep(5)
  #5. választási lehetőség a játékos
  print("""A. Bemész a szobába
 B. Nem mész be a szobába""")
@@ -141,7 +142,7 @@ def valasztas_halal():
 time.sleep(3)
 def valasztas_jobbra():
  print("A jobb mindig jobb, most is jó lesz a jobb irány. Céltudatosan haladsz előre, finoman és óvatosan, ám egyszer csak rálépsz valamire. Felemelve a lábad tudomásul veszed, hogy bármi is volt a borítékban, azt sikeresen szétlapítottad. Érzésre valami gumis masszának, kocsonyás dolognak tűnik. Észreveszed, hogy további borítékok hevernek a földön, amik egyfajta iránymutatóként egy szobába vezetnek. ")
- time.sleep(2)
+ time.sleep(8)
  #6. választási lehetőség a játékosnak
  print("""A. Bemész a szobába
 B. Tovább haladsz a folyosón""")
