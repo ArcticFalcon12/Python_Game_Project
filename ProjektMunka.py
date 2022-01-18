@@ -15,15 +15,15 @@ B. Kösz inkább kihagyom! """)
 #1. választási lehetősége a játékosnak
  choice = input(">>> ")
  if choice in valasz_A:
+     print("\n Legyen hát! Kezdődjön a show!")
      valasztas_kezdes()
  elif choice in valasz_B:
     print("\n  Biztos vagyok benne, hogy érdekelni fog téged. Veszíteni valód nincsen, nem igaz? Na ugye! Szerintem el is kezdhetjük! Showtime!")
+    time.sleep(5)
     valasztas_kezdes()
  else:
     print (szukseges)
 def valasztas_kezdes():
- print("Kezdődjön a show!")
- time.sleep(2)
  print (" Egy számodra idegen helyen, egy idegen szobában ébredsz fel. A bal kezed egy baldachinos ágy egyik lábához van kikötözve. Nem emlékszel, hogy mi történt tegnap, ahogyan arra sem, hogy mit kereshetsz itt. Csak egy dologra tudsz gondolni: neked most nem kéne itt lenned. "
  "A földön megpillantasz egy rozsdás kést, amivel talán el tudnád vágni a kötelet.")
  time.sleep(1)
@@ -68,13 +68,14 @@ B. Gyorsan elvágod a kötelet és elbújsz egy közeli szekrényben.""")
      print (szukseges)
      valasztas_kes()
 def valasztas_kez():
+ print("Mivel a kötél laza volt sikeresen ki tudtad magad oldozni!")
  print("A kést elrejted a párna alá és visszafekszel az ágyra")
  print("A léptek egyre hangosabbak, és hangosabbak, míg nem elérnek a szobaajtóig. Lélegzeted visszafolytva próbálod színlelni az alvást, és várod, hogy mi történik.")
  time.sleep(3)
  print("Egyszer csak ismételten lépteket hallasz, ezek azonban már halkulnak. Az illető elhagyta a szobát. Mikor már meggyőződtél arról, hogy kellőképpen távol van az a valaki, felkelsz az ágyból és elvágod a kötelet. Ideje menekülőre fogni és kiutat keresni. A kést eldobod és kilépsz a szobából.")
  folyoso()
 def folyoso():
- print("Kilépve a szobábó eléd tárul egy folyosó, amely hosszan elnyúlik balra és jobbra is.")
+ print("Kilépve a szobából eléd tárul egy folyosó, amely hosszan elnyúlik balra és jobbra is.")
  time.sleep(1)
  #4. választási lehetőség a játékosnak
  print("""A. Úgy döntesz, hogy balra fordulsz 
@@ -139,7 +140,7 @@ def valasztas_halal():
     halal()
 time.sleep(3)
 def valasztas_jobbra():
- print("A jobb mindig jobb, most is jó lesz a jobb irány. Céltudatosan halasz előre, finoman és óvatosan, ám egyszer csak rálépsz valamire. Felemelve a lábad tudomásul veszed, hogy bármi is volt a borítékban, azt sikeresen szétlapítottad. Érzésre valami gumis masszának, kocsonyás dolognak tűnik. Észreveszed, hogy további borítékok hevernek a földön, amik egyfajta iránymutatóként egy szobába vezetnek. ")
+ print("A jobb mindig jobb, most is jó lesz a jobb irány. Céltudatosan haladsz előre, finoman és óvatosan, ám egyszer csak rálépsz valamire. Felemelve a lábad tudomásul veszed, hogy bármi is volt a borítékban, azt sikeresen szétlapítottad. Érzésre valami gumis masszának, kocsonyás dolognak tűnik. Észreveszed, hogy további borítékok hevernek a földön, amik egyfajta iránymutatóként egy szobába vezetnek. ")
  time.sleep(2)
  #6. választási lehetőség a játékosnak
  print("""A. Bemész a szobába
@@ -154,6 +155,7 @@ B. Tovább haladsz a folyosón""")
     valasztas_jobbra()
 def valasztas_bemesz_szoba_jobb():
     print(" Követed a borítékokat és belépsz a szobába. Egészen megdöbbentő a látvány, ami téged fogad. A szoba, amibe beléptél a te fényképeiddel van kitapétázva. Képek, amin a barátaiddal szerepelsz, régi több évvel ezelőtti családiképek, fényképek iskolából, régi bulikból és: babafényképek. Azonban a legrémisztőbb az, hogy olyan fényképek is szerepelnek a falakon, amelyeket nem te készítettél magadról vagy többed magadról, hanem valaki más rólad. A veled szemben lévő fal előtt egy óriási íróasztal helyezkedik el, közepén egy gyertyával mellette egy kis üveggel. Közelebb lépsz, és meglátod, hogy a kis üvegcse valójában egy kis tintás üveg, amiben vörös tinta van. A gyertya előtt egy papírlap szerepel, amelyen az írás még friss. Arra leszel figyelmes, hogy a levél címzettje te vagy. ")
+    time.sleep(10)
     level()
     time.sleep(10)
     print("Sokkolt állapotba kerülsz, felgyorsul a szívverésed. Aggódsz és félsz, és ahogy azt a levél is írja, legszívesebben menekülnél. Bele sem mersz gondolni, hogy miért vannak vörössel írva a sorok, vagy, hogy miért van a papír mellett heverő íróeszköznek emberi ujjcsont váza. Azonban azt már nem tudod figyelmen kívül hagyni, hogy az írás láthatóan friss, az írás még nem száradt meg. Ijedve rohansz vissza a folyosóra. ")
@@ -175,7 +177,7 @@ def level():
     print("A végzet")
 def valasztas_tovabb_jobb():
     print("A folyosó végén látsz egy kétajtós szobát, aminek ajtajai résnyire vannak nyitva. Viszont ahogy közelítesz a szoba felé, orbitális bűz csapja meg az orrod. ")
-    time.sleep(2)
+    time.sleep(5)
     #7. választási lehetőség a játékosnak
     print("""A. Bemész a szobába
 B. Nem mész be a szobába""")
@@ -191,7 +193,7 @@ def valasztas_szoba_bemesz_jobb():
     print("Úgy döntesz, bemész a szobába. A résnyire nyitott ajtót beljebb lököd finoman, majd belépsz. Hirtelen felkapcsolódik a lámpa, anélkül, hogy te bármit is megnyomtál volna. De úgy érzed, bárcsak ne kapcsolódott volna fel semmi.Veled szemben két sorban a falnak döntve halott emberi testek hevernek. Arcuk össze van vagdosva, némelyikük hasa fel volt vágva, és belek lógtak ki belőlük, másoknak le volt vágva a kezük, a lábuk, és volt egy ember a szoba másik végén, pont veled szemben, akiből ki voltak harapva darabok.Ijedtedben az ajtó felé fordulsz, és már tennéd ki a lábad, ám egy halk, fájdalmaktól nyögő hang szólal meg a hátad mögül:")
     print("-Mivel… mivel érdemeltem… ezt ki?")
     print("Ekkor belép az ajtón egy férfi, zsákból készült maszkkal az arcán, és leüt.")
-    time.sleep(5)
+    time.sleep(15)
     valasztas_finale()
 def valasztas_nem_mesz_be_jobb():
     print("Úgy döntesz, nem mész be a szobába. Visszafordulsz, és elindulsz a folyosó másik oldala felé. Visszaérsz abba a szobába, ahonnan indultál. De a szoba teljesen máshogy néz ki, mint azelőtt. Nincs ágy, nincs szekrény, se törött kép, vagy vérfoltok a földön. Csak egy vörös fényforrás, ami a koromsötétben még baljósabb hatást kelt. Közelebb mész a fényforráshoz, azonban nem veszed észre, hogy a földön szögesdrót fekszik, amiben megbotlasz, és ráesel. Borzalmas fájdalmak között vérzel el.")
@@ -254,6 +256,7 @@ B. Bal oldali pisztoly""")
  choice = input(">>>")
  if choice in valasz_A:
      rossz_pisztoly()
+     halal()
  elif choice in valasz_B:
     jo_pisztoly()
     time.sleep(5)
